@@ -1,0 +1,22 @@
+<html>
+<head></head>
+<body onload="myFunction()">
+<input type="hidden" id="myInput" value="1">
+<input type="hidden" id="myInput2" value="2">
+<input type="hidden" id="myInput3" value="3">
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    var x = document.getElementById("myInput").value;
+    x = parseInt(x) + parseInt(document.getElementById("myInput2").value);
+    x = parseInt(x) + parseInt(document.getElementById("myInput3").value);
+    
+    document.getElementById("demo").innerHTML = x;
+}
+
+
+</script>
+</body>
+</html>
